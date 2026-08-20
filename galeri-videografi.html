@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeri Videografi — Azif</title>
+<meta name="description" content="Kumpulan hasil videografi Khaudri Muhammad Zafrullah (Azif).">
+<meta name="theme-color" content="#0B1120">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B1120'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%23C9A227' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="stars"></div>
+
+<header class="site-header">
+  <nav>
+    <a href="index.html#beranda" class="brand">AZIF<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#tentang">01 Tentang</a></li>
+      <li><a href="index.html#minat">02 Minat</a></li>
+      <li><a href="index.html#prestasi">03 Prestasi</a></li>
+      <li><a href="index.html#rencana">04 Rencana</a></li>
+      <li><a href="index.html#kontak">05 Kontak</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Buka menu navigasi" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-backdrop"></div>
+</header>
+
+<main>
+
+  <!-- ===================== HEADER GALERI ===================== -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <a href="index.html#minat" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        Kembali ke Beranda
+      </a>
+      <p class="eyebrow">Berkas 02 · Galeri</p>
+      <h1>Galeri Videografi</h1>
+      <p class="page-hero-desc">Kumpulan video hasil karya saya, dari proses pengambilan gambar hingga penyuntingan akhir.</p>
+    </div>
+  </section>
+
+  <!-- ===================== GALERI ===================== -->
+  <section class="gallery-section">
+    <div class="section-inner">
+
+      <div class="empty-state">
+        <div class="empty-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M3 9.5 4.2 5h15.6l1.2 4.5"/><rect x="3" y="9.5" width="18" height="10" rx="1.2"/><line x1="6" y1="5" x2="8" y2="9.5"/><line x1="11" y1="5" x2="13" y2="9.5"/><line x1="16" y1="5" x2="18" y2="9.5"/></svg>
+        </div>
+        <p class="eyebrow">Belum Ada Karya</p>
+        <p>Belum ada video yang ditampilkan. Karya videografi saya akan segera hadir di sini.</p>
+      </div>
+
+      <div class="gallery-grid" hidden></div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="footer-tag">— Berkas Ditutup —</p>
+  <p class="footer-motto">“Berusaha jadi lebih baik.” — Azif</p>
+  <p class="footer-copy">© 2026 Khaudri Muhammad Zafrullah</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+// ============================================================
+// DATA GALERI VIDEOGRAFI — edit di sini untuk menambah video baru
+// ============================================================
+// Cara menambah video baru:
+// 1. Siapkan gambar thumbnail (sampul) untuk video tersebut, simpan
+//    di folder yang sama dengan file "galeri-videografi.html" ini.
+// 2. Untuk video PENDEK: simpan juga file videonya (mp4) di folder
+//    yang sama, lalu isi properti "video" dengan nama filenya.
+//    Untuk video PANJANG: unggah dulu ke YouTube/Instagram/TikTok,
+//    lalu isi properti "link" dengan URL video tersebut.
+// 3. Salin satu baris contoh format di bawah, tempel di dalam
+//    array "galeriItems", lalu ganti isinya sesuai videomu.
+// 4. Item PALING TERAKHIR dalam daftar tidak diberi koma (,) di akhir.
+// 5. Simpan file, lalu buka/refresh halaman di browser.
+//
+// Properti yang tersedia untuk tiap item:
+//   gambar    (wajib)     nama file thumbnail/sampul. Contoh: "thumbnail-1.jpg"
+//   judul     (wajib)     judul singkat video
+//   deskripsi (opsional)  keterangan singkat video
+//   video     (opsional)  nama file video lokal untuk video pendek. Contoh: "klip-1.mp4"
+//   link      (opsional)  URL YouTube/Instagram/TikTok untuk video panjang
+//                         (isi salah satu saja: "video" ATAU "link")
+//
+// Contoh (hapus tanda "//" di setiap baris di bawah untuk mengaktifkan):
+// { gambar: "thumbnail-bts.jpg", judul: "Behind The Scene Robotika", deskripsi: "Dokumentasi proses latihan sebelum kompetisi.", video: "klip-bts.mp4" },
+// { gambar: "thumbnail-cinematic.jpg", judul: "Video Cinematic Sekolah", deskripsi: "Diunggah penuh di YouTube.", link: "https://youtube.com/watch?v=xxxxx" },
+
+const galeriItems = [
+  // Tambahkan video barumu di sini, mengikuti format contoh di atas.
+];
+
+renderGaleri(galeriItems);
+</script>
+
+</body>
+</html>

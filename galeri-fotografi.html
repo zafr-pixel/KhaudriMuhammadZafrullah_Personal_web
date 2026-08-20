@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Galeri Fotografi — Azif</title>
+<meta name="description" content="Kumpulan hasil fotografi Khaudri Muhammad Zafrullah (Azif).">
+<meta name="theme-color" content="#0B1120">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='8' fill='%230B1120'/%3E%3Ccircle cx='16' cy='16' r='7' fill='none' stroke='%23C9A227' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700&family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<div id="stars"></div>
+
+<header class="site-header">
+  <nav>
+    <a href="index.html#beranda" class="brand">AZIF<span>.</span></a>
+    <ul class="nav-links">
+      <li><a href="index.html#tentang">01 Tentang</a></li>
+      <li><a href="index.html#minat">02 Minat</a></li>
+      <li><a href="index.html#prestasi">03 Prestasi</a></li>
+      <li><a href="index.html#rencana">04 Rencana</a></li>
+      <li><a href="index.html#kontak">05 Kontak</a></li>
+    </ul>
+    <button class="nav-toggle" aria-label="Buka menu navigasi" aria-expanded="false">
+      <span></span><span></span><span></span>
+    </button>
+  </nav>
+  <div class="nav-backdrop"></div>
+</header>
+
+<main>
+
+  <!-- ===================== HEADER GALERI ===================== -->
+  <section class="page-hero">
+    <div class="page-hero-inner">
+      <a href="index.html#minat" class="back-link">
+        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M19 12H5M11 18l-6-6 6-6"/></svg>
+        Kembali ke Beranda
+      </a>
+      <p class="eyebrow">Berkas 02 · Galeri</p>
+      <h1>Galeri Fotografi</h1>
+      <p class="page-hero-desc">Kumpulan hasil bidikan saya — momen, komposisi, dan cerita yang saya tangkap lewat kamera.</p>
+    </div>
+  </section>
+
+  <!-- ===================== GALERI ===================== -->
+  <section class="gallery-section">
+    <div class="section-inner">
+
+      <div class="empty-state">
+        <div class="empty-icon">
+          <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"><path d="M4 8h3l2-2.5h6L17 8h3a1 1 0 0 1 1 1v9a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1V9a1 1 0 0 1 1-1z"/><circle cx="12" cy="13" r="3.4"/></svg>
+        </div>
+        <p class="eyebrow">Belum Ada Karya</p>
+        <p>Galeri foto ini masih kosong. Karya fotografi saya akan segera ditambahkan di sini.</p>
+      </div>
+
+      <div class="gallery-grid" hidden></div>
+
+    </div>
+  </section>
+
+</main>
+
+<footer class="site-footer">
+  <p class="footer-tag">— Berkas Ditutup —</p>
+  <p class="footer-motto">“Berusaha jadi lebih baik.” — Azif</p>
+  <p class="footer-copy">© 2026 Khaudri Muhammad Zafrullah</p>
+</footer>
+
+<script src="script.js"></script>
+<script>
+// ============================================================
+// DATA GALERI FOTOGRAFI — edit di sini untuk menambah foto baru
+// ============================================================
+// Cara menambah foto baru:
+// 1. Simpan file foto di folder yang sama dengan file
+//    "galeri-fotografi.html" ini.
+// 2. Salin satu baris contoh format di bawah, tempel di dalam
+//    array "galeriItems", lalu ganti isinya sesuai fotomu.
+// 3. Item PALING TERAKHIR dalam daftar tidak diberi koma (,) di akhir.
+// 4. Simpan file, lalu buka/refresh halaman di browser.
+//    Foto akan otomatis bisa diklik untuk dilihat lebih besar.
+//
+// Properti yang tersedia untuk tiap item:
+//   gambar    (wajib)    nama file foto. Contoh: "foto-1.jpg"
+//   judul     (wajib)    judul singkat foto
+//   deskripsi (opsional) keterangan singkat (lokasi, cerita, dll)
+//
+// Contoh (hapus tanda "//" di setiap baris di bawah untuk mengaktifkan):
+// { gambar: "senja-pelabuhan.jpg", judul: "Senja di Pelabuhan Paciran", deskripsi: "Diambil saat golden hour, awal 2026." },
+// { gambar: "potret-jalanan.jpg", judul: "Potret Jalanan", deskripsi: "Momen candid di sekitar sekolah." },
+
+const galeriItems = [
+  // Tambahkan foto barumu di sini, mengikuti format contoh di atas.
+];
+
+renderGaleri(galeriItems);
+</script>
+
+</body>
+</html>
